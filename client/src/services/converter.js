@@ -3,7 +3,7 @@ export default class CartService {
   _apiBaseProd = "https://currencyconverterexpress.herokuapp.com/api";
   sendResource = async (url, data) => {
     try {
-      const response = await fetch(`${this._apiBaseProd}${url}`, {
+      const response = await fetch(`${this._apiBase}${url}`, {
         method: "POST",
         body: JSON.stringify(data),
 
