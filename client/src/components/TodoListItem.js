@@ -20,7 +20,7 @@ export default class TodoListItem extends Component {
         <span className="todo-list-item-quantity"> {quantity}</span>
         <span className="todo-list-item-name">{name}</span>
         <span className="todo-list-item-price">
-          {price} <span className="fa fa-rub" />
+          {price * quantity} <span className="fa fa-rub" />
         </span>
 
         <button
