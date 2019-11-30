@@ -1,0 +1,11 @@
+.converter-header {
+  align-items: flex-end;
+}
+
+.converter-header h4 {
+  flex-grow: 1;
+}
+.converter-header select {
+  font-size: 1.2rem;
+  color: grey;
+}

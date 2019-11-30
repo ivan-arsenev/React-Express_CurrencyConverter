@@ -1,0 +1,12 @@
+.item-add-form {
+  margin-top: 10px;
+}
+.item-add-form input {
+  margin-right: 3px;
+}
+.item-add-form select {
+  margin-right: 3px;
+}
+.form-control.text {
+  min-width: 200px;
+}
