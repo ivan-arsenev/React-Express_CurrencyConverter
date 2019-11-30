@@ -1,8 +1,9 @@
 export default class CartService {
   _apiBase = "http://localhost:5000/api"; // todo
+  _apiBaseProd = "https://currencyconverterexpress.herokuapp.com/api";
   sendResource = async (url, data) => {
     try {
-      const response = await fetch(url, {
+      const response = await fetch(`${this._apiBaseProd}${url}`, {
         method: "POST",
         body: JSON.stringify(data),
 
