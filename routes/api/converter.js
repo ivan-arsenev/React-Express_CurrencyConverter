@@ -57,7 +57,8 @@ const convertValue = async (products, currency) => {
     let valute = await getData();
 
     products.map(val => {
-      val.price = (val.price / valute[currency]["Value"]) * val.quantity;
+      if (currency == "RUB") val.price = val.price * val.quantity;
+      else val.price = (val.price / valute[currency]["Value"]) * val.quantity;
     });
   } catch (error) {
     console.log(error);
