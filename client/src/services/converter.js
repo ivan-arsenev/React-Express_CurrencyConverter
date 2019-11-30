@@ -2,7 +2,7 @@ export default class CartService {
   _apiBase = "http://localhost:5000/api"; // todo
   sendResource = async (url, data) => {
     try {
-      const response = await fetch(`${this._apiBase}${url}`, {
+      const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify(data),
 
